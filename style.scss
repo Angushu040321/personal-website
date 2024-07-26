@@ -1,0 +1,218 @@
+@import"reset.css";
+@import"CrimsonPro_Complete/Fonts/WEB/css/crimson-pro.css";
+:root {
+  font-family: CrimsonPro-Regular,Didot, serif,system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  
+  color: #13131d;
+  background-color: #baac91;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+
+}
+
+
+#nav-bar{
+  z-index: 1;
+  background-color: #baac91;
+  margin-top: top;
+  height: 3rem;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  position: fixed;
+  align-items: centrer;
+  justify-content: flex-end;
+  gap:.3rem
+  //transition: all 2s;
+}
+
+
+#nav-bar > button {
+  width: 5.5rem;
+  letter-spacing: .1px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  transition: all 280ms ease-in-out;
+  font-family: auto;  
+}
+#nav-bar>button>span{
+  transition: all 280ms ease-in-out;
+}
+#nav-bar > button:hover {
+  letter-spacing: .1em;
+  background-size:contain;
+}
+
+.container {
+  
+  width: 100%;
+  height: 100vh;  
+
+  
+}
+
+.slide {
+  
+  
+  width: 100%;
+  height: 100vh;
+  
+}
+
+
+
+
+
+
+#about-me{
+  padding-top: 3rem;
+  background-color: #927c5d;
+  
+  h1{
+    text-align: center;
+    
+    font-size: 5rem;
+  }
+  h2{
+    
+  }
+  p{
+
+  }
+}
+
+
+
+#project{
+  
+  background-image: url("assets/channels4_profile.jpg");
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-color: black;
+  
+  h1 {
+      
+      display: inline-block;
+      vertical-align: top;
+      font-size: 3rem;
+
+      width: 100%;
+      height: 6%;
+      color: white;
+      text-align: center;
+    }
+ 
+  #p_text_holder{
+      justify-self: center;
+      height: 2rem;
+      
+    }
+    
+  .cards-wrapper{ 
+    
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    .card{
+      
+      
+      height: 85%;   
+      margin: 2%;
+      background-size: auto;
+      backdrop-filter: blur(20px);  
+      -webkit-backdrop-filter: blur(10px);
+      
+      color:white;
+      border:solid;
+      p{
+        color: #caff9c;
+        text-align: center;
+      }
+      h2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        color:white;
+        font-size: 2rem;
+        position: 50%;
+        text-align: center;
+      }
+      button{
+        position: absolute;
+        bottom: 10%;
+        //from onilne
+        appearance: none;
+        background-color: gray;
+        border: 2px solid #1A1A1A;
+        //border-radius: 15px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+        min-height: 60px;
+        min-width: 0;
+        outline: none;
+        padding: 16px 24px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 100%;
+        will-change: transform;
+        
+      }
+      button:disabled {
+        pointer-events: none;
+      }
+      button:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+        transform: translateY(-2px);
+      }
+      button:active {
+        box-shadow: none;
+        transform: translateY(0);
+      }
+
+
+    }
+  }
+  
+}
+  
+
+#p_text_holder 
+{
+  font-size: 2rem;
+  text-align: center;
+  height: 10%;
+  background-color: #d4a152;
+  
+}
+
+
+
+
+.bottom-container{
+  background-color: #13131d;
+  height: 5rem;
+}
