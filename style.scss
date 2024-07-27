@@ -19,6 +19,7 @@
 
 
 #nav-bar{
+  top:0;
   z-index: 1;
   background-color: #baac91;
   margin-top: top;
@@ -29,10 +30,12 @@
   position: fixed;
   align-items: centrer;
   justify-content: flex-end;
-  gap:.3rem
-  //transition: all 2s;
+  gap:.3rem;
+  transition: all 200ms;
 }
-
+#nav-bar.hidden{
+  top:-3rem;
+}
 
 #nav-bar > button {
   width: 5.5rem;
@@ -57,7 +60,6 @@
 .container {
   
   width: 100%;
-  height: 100vh;  
 
   
 }
@@ -67,7 +69,10 @@
   
   width: 100%;
   height: 100vh;
-  
+  h1{
+    font-size: 5rem;
+    text-align: center;
+  } 
 }
 
 
@@ -78,20 +83,67 @@
 #about-me{
   padding-top: 3rem;
   background-color: #927c5d;
-  
-  h1{
-    text-align: center;
-    
-    font-size: 5rem;
-  }
-  h2{
-    
-  }
-  p{
+   
 
+  h1 {
+      text-align: center;
+      font-size: 5rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3{
+      font-size: 1.5rem;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    p {
+
+    }
+  
+}
+.about-me-wrapper{
+  position: absolute;
+  width: 100%;
+  height: auto;
+
+  width: inherit;
+  display:flex;
+  justify-content:space-between;
+  .left{
+      
+      width: 30%;
+      height:auto;
+      
+      background-color: #FFFFFF;
+      
+  }
+  .right{
+    background-color: #caff9c;
+    width: 40%;
+    height: auto;
+   
+    
+  }
+  .bottom{
+    background-color: #4d7a9b;
+    
+    width: 40%;
+    height: auto;
+    
+  }
+  #project{
+    font-size: 40rem;
+    display: flex;
+    align-self: baseline;
+    justify-self:center
+    ;
   }
 }
-
 
 
 #project{
@@ -127,7 +179,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     .card{
-      
       
       height: 85%;   
       margin: 2%;
@@ -215,4 +266,24 @@
 .bottom-container{
   background-color: #13131d;
   height: 5rem;
+  width: 100%;
+  display: flex;
+    justify-content: space-evenly;
+  p{
+    color: white;
+  }
+
+    button{
+    
+    
+    width:auto;
+    height:4rem;
+    img{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
 }

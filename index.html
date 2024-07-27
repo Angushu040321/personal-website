@@ -12,9 +12,9 @@
    
     <header>
       <nav id="nav-bar" >
-        <button id="my-resume"><span>About Me</span></button>
-        <button id="projects"><span>Projects</span></button>
-        <button id="my-resume"><span>Resume</span></button>
+        <button id="me" onclick="smoothScroll(document.getElementById('about-me'))"><span>About Me</span></button>
+        <button id="projects" onclick="smoothScroll(document.getElementById('project'))"><span>Projects</span></button>
+        <button id="resume" onclick="location.href='assets/Resume.pdf';"><span>Resume</span></button>
       </nav>
       <script src="script.js"></script>
     </header>
@@ -22,9 +22,25 @@
       
       <section id  ="about-me" class ="slide">
         <h1>Welcome</h1>
-        <h2>Hi my Name is Angus</h2>
-        <p>im intrested in cloud computing and network distubtion</p>
-        
+        <div class = "about-me-wrapper">
+          <div class="left">
+            <h2>Hi my Name is Angus</h2>
+            <p>Im a rising junior in Hunter college studying computer sceience </p>
+          </div>
+          <div class="right">
+          
+            <h2>My interest</h2>
+            <p>Im intrested in cloud computing and network distubtion, aiming to becomming a SRE or Devops engineer </p>
+          
+          </div>
+          <div class="bottom">
+            
+            <h2>My Next step</h2>
+            <p>im currently part of the Headstarter Fellowship, in the future, I will be working more closely with cloud tools and Linux based machines </p>
+          
+          </div>
+        </div>
+        <h3>Below are my projects</h2>
       </section>
         
       <section id = "project" class = "slide">
@@ -66,12 +82,19 @@
         </div>
       
       </section>
+      
+      
+
     </div>
-    <div class = "bottom-container">
-      <a></a>
-      <a></a>
-      <a></a>
-    </div> 
+    <div class="bottom-container">
+      
+      <button onclick="window.location.href='https://github.com/Angushu040321';">
+        <img src="icons/github.png" alt="LinkedIn Profile" />
+      </button>
+      <p>Phone: 332-867-3568 <br> Email:Angushu0321@gmail.com</p>
+    <button onclick="window.location.href='http://www.linkedin.com/in/jen-ting-hu-860132201/';">
+      <img src="icons/github.png" alt="LinkedIn Profile" />
+    </button>
     
       
   </body>
